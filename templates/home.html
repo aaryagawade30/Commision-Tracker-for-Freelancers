@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Commissions</title>
+</head>
+<body>
+    <h1>Commission List</h1>
+    <ul>
+        {% for commission in commissions %}
+            <li>
+                {{ commission.description }} - Status: {{ commission.artwork_status }} - 
+                <a href="{{ url_for('client_details', client_id=commission.client_id) }}">Client Details</a> | 
+                <a href="{{ url_for('payment_details', commission_id=commission.commission_id) }}">Payment Details</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

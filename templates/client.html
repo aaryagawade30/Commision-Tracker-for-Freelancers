@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Details</title>
+</head>
+<body>
+    <h1>Client Information</h1>
+    <p>Name: {{ client.first_name }} {{ client.last_name }}</p>
+    <p>Email: {{ client.email }}</p>
+    <p>Phone: {{ client.phone_number }}</p>
+    <a href="{{ url_for('index') }}">Back to Commissions</a>
+</body>
+</html>
