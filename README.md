@@ -2,8 +2,6 @@
 
 A web-based application for artists and freelancers to manage clients, commissions, and payments efficiently. Built with Flask, MySQL, and modern frontend technologies.
 
-![Commission Tracker Screenshot](https://via.placeholder.com/800x400)
-
 ## Features
 
 - **Client Management**: Store and manage client details including contact information
